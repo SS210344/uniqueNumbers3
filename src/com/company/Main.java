@@ -13,7 +13,12 @@ public class Main {
             try {
                 System.out.println("enter length of list:");
                 length = Integer.parseInt(UserInput());
-                break;
+                if(length>0) {
+                    break;
+                }
+                else{
+                    System.out.println("number need to be greater then 0");
+                }
             }
             catch(Exception e){
                 System.out.println("invalid input"+e);
